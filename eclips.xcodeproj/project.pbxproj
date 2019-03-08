@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0EEE75A322332948008B5558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75A222332948008B5558 /* AppDelegate.swift */; };
-		0EEE75A522332948008B5558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75A422332948008B5558 /* ViewController.swift */; };
+		0EEE75A522332948008B5558 /* GameClipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75A422332948008B5558 /* GameClipsViewController.swift */; };
 		0EEE75A822332948008B5558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEE75A622332948008B5558 /* Main.storyboard */; };
 		0EEE75AA22332948008B5558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EEE75A922332948008B5558 /* Assets.xcassets */; };
 		0EEE75AD22332948008B5558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEE75AB22332948008B5558 /* LaunchScreen.storyboard */; };
+		0EEE75B522332E98008B5558 /* GameClipVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75B422332E98008B5558 /* GameClipVideoPlayer.swift */; };
+		0EEE75BA22332F3B008B5558 /* GameClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75B922332F3B008B5558 /* GameClip.swift */; };
+		0EEE75BC22333030008B5558 /* GameClipThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE75BB22333030008B5558 /* GameClipThumbnailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EEE759F22332948008B5558 /* eclips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eclips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEE75A222332948008B5558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0EEE75A422332948008B5558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EEE75A422332948008B5558 /* GameClipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClipsViewController.swift; sourceTree = "<group>"; };
 		0EEE75A722332948008B5558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EEE75A922332948008B5558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EEE75AC22332948008B5558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EEE75AE22332948008B5558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EEE75B422332E98008B5558 /* GameClipVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClipVideoPlayer.swift; sourceTree = "<group>"; };
+		0EEE75B922332F3B008B5558 /* GameClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClip.swift; sourceTree = "<group>"; };
+		0EEE75BB22333030008B5558 /* GameClipThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClipThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		0EEE75A122332948008B5558 /* eclips */ = {
 			isa = PBXGroup;
 			children = (
+				0EEE75B822332F19008B5558 /* Models */,
+				0EEE75B722332F14008B5558 /* Views */,
+				0EEE75B622332F0B008B5558 /* ViewControllers */,
 				0EEE75A222332948008B5558 /* AppDelegate.swift */,
-				0EEE75A422332948008B5558 /* ViewController.swift */,
 				0EEE75A622332948008B5558 /* Main.storyboard */,
 				0EEE75A922332948008B5558 /* Assets.xcassets */,
 				0EEE75AB22332948008B5558 /* LaunchScreen.storyboard */,
 				0EEE75AE22332948008B5558 /* Info.plist */,
 			);
 			path = eclips;
+			sourceTree = "<group>";
+		};
+		0EEE75B622332F0B008B5558 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EEE75A422332948008B5558 /* GameClipsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0EEE75B722332F14008B5558 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EEE75B422332E98008B5558 /* GameClipVideoPlayer.swift */,
+				0EEE75BB22333030008B5558 /* GameClipThumbnailCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EEE75B822332F19008B5558 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EEE75B922332F3B008B5558 /* GameClip.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EEE75A522332948008B5558 /* ViewController.swift in Sources */,
+				0EEE75B522332E98008B5558 /* GameClipVideoPlayer.swift in Sources */,
+				0EEE75BC22333030008B5558 /* GameClipThumbnailCollectionViewCell.swift in Sources */,
+				0EEE75A522332948008B5558 /* GameClipsViewController.swift in Sources */,
 				0EEE75A322332948008B5558 /* AppDelegate.swift in Sources */,
+				0EEE75BA22332F3B008B5558 /* GameClip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

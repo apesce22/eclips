@@ -8,13 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class GameClipsViewController: UIViewController {
+    
+    
+    // MARK: Views
+    
+    @IBOutlet weak var gameClipVideoPlayer: GameClipVideoPlayer!
+    @IBOutlet weak var gameClipsCollectionView: UICollectionView!
+    
+    
+    // MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
-        let string = ""
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
